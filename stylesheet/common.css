@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    line-height: normal;
+    letter-spacing: normal;
+    background-repeat: no-repeat;
+    }
+
+:root {
+    /* basic color */
+    --white-color: #EFEFEF;
+    --gray1-color: #C9C9C9;
+    --gray2-color: #A2A2A2;
+    --gray3-color: #757575;
+    --gray4-color: #505050;
+    --header-color: #292A2D;
+    --black-color: #18191A;
+
+    /* accent color */
+    --purple-color: #091AD0;
+    --light-purple-color: #6277ff;
+    --red-color: #f0443b;
+    --sky-color: #42BCCF;
+    --green-color: #2ED3B4;
+    --orange-color: #E88F27;
+
+    /* padding, margin */
+    --whole-margin: 24.5rem;
+    --whole-padding: 24.5rem;
+    --basic-margin: 1.5rem;
+    --basic-padding: 1.5rem;
+
+    /* font-size */
+    --large-size: 2rem;
+    --midieum-size: 1rem;
+    --smaill-siez: 0.9rem;
+}
+
+/* 백그라운드 이미지는 cover로 하면 대부분 반응형 가능 
+속성 한번에 쓰려면,
+background: center/cover no-repeat url('')*/
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* header */
+nav {
+    font-family: Poppins;
+    font-weight: 500;
+    background-color: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--whole-padding);
+    width: 100%;
+    height: 1rem;
+}
+
+#navbar {
+    height: 1rem;
+}
+
+.navbar_logo a {
+    color: var(--white-color);
+}
+
+.navbar_logo span {
+    color: var(--green-color);
+}
+
+.navbar_menu {
+    display: flex;
+}
+
+.navbar_menu_item {
+    margin-left: var(--basic-margin);
+    color: var(--white-color);
+}
