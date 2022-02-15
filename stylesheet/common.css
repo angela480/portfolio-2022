@@ -22,6 +22,7 @@
     --gray4-color: #505050;
     --header-color: #292A2D;
     --black-color: #18191A;
+    --footer-color: #1F2021;
 
     /* accent color */
     --purple-color: #091AD0;
@@ -48,6 +49,24 @@
     --animation-duration: 300ms;
 }
 
+/* 스크롤 색상 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--gray3-color);
+    border-radius: 20px;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333c51;
+    border-radius: 20px;
+}
+
+
 /* 백그라운드 이미지는 cover로 하면 대부분 반응형 가능 
 속성 한번에 쓰려면,
 background: center/cover no-repeat url('')
@@ -62,10 +81,15 @@ transition: background-color(all) 300ms linear;
 
 /* position 부모가 Relative */
 
-body {
+html, body {
     width: 100%;
     height: 100%;
     background-color: var(--black-color);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
 }
 
 /* header */
@@ -82,7 +106,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    box-shadow: 0 5px 10px var(--black-color) 0.3;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.4);
 }
 
 .navbar_logo a {
@@ -109,16 +133,53 @@ main {
     width: 100%;
 }
 
+/* footer */
+footer {
+    padding: 3rem 0;
+    /* background-color: var(--footer-color); */
+    text-align: center;
+    font-weight: 200;
+    color: var(--gray1-color);
+    height: 300;
+    background: url('images/home_background.png');
+}
+
+footer h1 {
+    color: var(--white-color);
+}
+
+footer h1 span {
+    color: var(--green-color);
+}
+
+.footer_info {
+    margin: 1.5rem 0;
+}
+
+.footer_info span:nth-child(odd) {
+    color: var(--gray2-color);
+    margin-right: 0.5rem;
+}
+
+.footer_info span:nth-child(2) {
+    margin-right: 2rem;
+}
+
+.copyright {
+    font-size: 0.9rem;
+}
+
 /* Section */
 .section {
-    padding: 7rem 0;
     text-align: center;
-    /* max-width: 1200px; */
     margin: auto;
 }
 
 #about {
-    background-color: var(--purple-color);
+    background: url('images/home_background.png') no-repeat center;
+    width: 100%;
+    /* height: 100%; */
+    height: 300px;
 }
 
 #works {
@@ -126,5 +187,5 @@ main {
 }
 
 #contact {
-    background-color: #1F2021;
+    background-color: var(--orange-color);
 }
