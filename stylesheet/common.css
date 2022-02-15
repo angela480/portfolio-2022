@@ -43,15 +43,24 @@
     --font-regular: 0.9rem;
     --font-small: 1;
     --font-micro: 2;
+
+    /* Animation */
+    --animation-duration: 300ms;
 }
 
 /* 백그라운드 이미지는 cover로 하면 대부분 반응형 가능 
 속성 한번에 쓰려면,
-background: center/cover no-repeat url('')*/
+background: center/cover no-repeat url('')
+이미지 사이즈 일정하게 하려면, 
+.img {
+    max-width: 100%;
+    max-height: 100%; */
 
 /* hover시 부드럽게 변하게 하는거 
 transition: background-color(all) 300ms linear;
  */
+
+/* position 부모가 Relative */
 
 body {
     width: 100%;
@@ -66,7 +75,13 @@ body {
     background-color: var(--header-color);
     display: flex;
     justify-content: space-between;
-    padding: 1.2rem 24.5rem;
+    padding: 1.2rem 5rem;
+    width: 100%;
+    z-index: 100000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     box-shadow: 0 5px 10px var(--black-color) 0.3;
 }
 
@@ -85,4 +100,31 @@ body {
 .navbar_menu_item {
     margin-left: var(--basic-margin);
     color: var(--white-color);
+}
+
+/* 컨텐츠 묶기 */
+main {
+    padding-top: 4rem;
+    overflow-y: auto;
+    width: 100%;
+}
+
+/* Section */
+.section {
+    padding: 7rem 0;
+    text-align: center;
+    /* max-width: 1200px; */
+    margin: auto;
+}
+
+#about {
+    background-color: var(--purple-color);
+}
+
+#works {
+    background-color: #2ED3B4;
+}
+
+#contact {
+    background-color: #1F2021;
 }
