@@ -32,40 +32,42 @@
     --orange-color: #E88F27;
 
     /* padding, margin */
-    --whole-margin: 24.5rem;
-    --whole-padding: 24.5rem;
+    --whole-margin: 0 24.5rem;
+    --whole-padding: 0 24.5rem;
     --basic-margin: 1.5rem;
     --basic-padding: 1.5rem;
 
     /* font-size */
-    --large-size: 2rem;
-    --midieum-size: 1rem;
-    --smaill-siez: 0.9rem;
+    --font-large: 2rem;
+    --font-medium: 1rem;
+    --font-regular: 0.9rem;
+    --font-small: 1;
+    --font-micro: 2;
 }
 
 /* 백그라운드 이미지는 cover로 하면 대부분 반응형 가능 
 속성 한번에 쓰려면,
 background: center/cover no-repeat url('')*/
 
+/* hover시 부드럽게 변하게 하는거 
+transition: background-color(all) 300ms linear;
+ */
+
 body {
     width: 100%;
     height: 100%;
+    background-color: var(--black-color);
 }
 
 /* header */
-nav {
+#navbar {
     font-family: Poppins;
     font-weight: 500;
     background-color: var(--header-color);
     display: flex;
     justify-content: space-between;
-    padding: var(--whole-padding);
-    width: 100%;
-    height: 1rem;
-}
-
-#navbar {
-    height: 1rem;
+    padding: 1.2rem 24.5rem;
+    box-shadow: 0 5px 10px var(--black-color) 0.3;
 }
 
 .navbar_logo a {
