@@ -136,11 +136,12 @@ main {
 /* footer */
 footer {
     padding: 3rem 0;
-    background-color: var(--footer-color);
+    /* background-color: var(--footer-color); */
     text-align: center;
     font-weight: 200;
     color: var(--gray1-color);
     height: 300;
+    background: url('images/home_background.png');
 }
 
 footer h1 {
@@ -177,7 +178,7 @@ footer h1 span {
 }
 
 section#about {
-    background: url('images/home_background.png') center/cover no-repeat;
+    background-image: url(images/home_background.png);
     width: 100%;
 }
 
