@@ -117,6 +117,10 @@ html, body {
     display: flex;
 }
 
+.navbar_menu a:hover {
+    color: var(--green-color);
+}
+
 .navbar_menu .active {
     color: var(--green-color);
 }
@@ -198,7 +202,8 @@ footer h1 span {
 
 /* about me */
 #about {
-    background-color: var(--black-color);
+    background: url('images/about.png') center/cover no-repeat;
+    height: 725px;
 }
 
 /* work */
@@ -214,9 +219,12 @@ footer h1 span {
 /* ARK header*/
 .header {
     display: flex;
-    justify-content: center;
     padding-top: 20px;
     border-bottom: 1px solid #292A2D;
+    position: fixed;
+    background-color: #18191A;
+    width: 100%;
+    justify-content: center;
 }
 
 .header a {
@@ -244,4 +252,30 @@ footer h1 span {
 
 .header_item {
     margin-right: 1.5rem;
+}
+
+section.main {
+    margin-top: 55px;
+}
+
+/* 아크 */
+div.ark_main_first {
+    background: url('images/ark_1.png') center/cover no-repeat;
+    height: 3650px;
+}
+
+div.ark_main_second {
+    background: url('images/ark_2.png') center/cover no-repeat;
+    height: 5932px;
+}
+
+/* 도어락 */
+div.smartDL_main_first {
+    background: url('images/smartDL_1.png') center/cover no-repeat;
+    height: 3593px;
+}
+
+div.smartDL_main_second {
+    background: url('images/smartDL_2.png') center/cover no-repeat;
+    height: 8888px;
 }
