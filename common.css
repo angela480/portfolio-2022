@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    line-height: normal;
+    letter-spacing: normal;
+    background-repeat: no-repeat;
+    }
+
+:root {
+    /* basic color */
+    --white-color: #EFEFEF;
+    --gray1-color: #C9C9C9;
+    --gray2-color: #A2A2A2;
+    --gray3-color: #757575;
+    --gray4-color: #505050;
+    --header-color: #292A2D;
+    --black-color: #18191A;
+    --footer-color: #1F2021;
+
+    /* accent color */
+    --purple-color: #091AD0;
+    --light-purple-color: #6277ff;
+    --red-color: #f0443b;
+    --sky-color: #42BCCF;
+    --green-color: #2ED3B4;
+    --orange-color: #E88F27;
+
+    /* padding, margin */
+    --whole-margin: 0 24.5rem;
+    --whole-padding: 0 24.5rem;
+    --basic-margin: 1.5rem;
+    --basic-padding: 1.5rem;
+
+    /* font-size */
+    --font-large: 2rem;
+    --font-medium: 1rem;
+    --font-regular: 0.9rem;
+    --font-small: 1;
+    --font-micro: 2;
+
+    /* Animation */
+    --animation-duration: 300ms;
+}
+
+/* 스크롤 색상 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--gray3-color);
+    border-radius: 20px;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333c51;
+    border-radius: 20px;
+}
+
+
+/* 백그라운드 이미지는 cover로 하면 대부분 반응형 가능 
+속성 한번에 쓰려면,
+background: center/cover no-repeat url('')
+이미지 사이즈 일정하게 하려면, 
+.img {
+    max-width: 100%;
+    max-height: 100%; */
+
+/* hover시 부드럽게 변하게 하는거 
+transition: background-color(all) 300ms linear;
+ */
+
+/* position 부모가 Relative */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-color);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+/* header */
+#navbar {
+    font-weight: 500;
+    background-color: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 5rem;
+    width: 100%;
+    z-index: 100000;
+    position: fixed;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.navbar_logo a {
+    color: var(--white-color);
+}
+
+.navbar_logo span {
+    color: var(--green-color);
+}
+
+.navbar_menu {
+    display: flex;
+}
+
+.navbar_menu_item {
+    margin-left: var(--basic-margin);
+    color: var(--white-color);
+}
+
+/* 컨텐츠 묶기 */
+main {
+    padding-top: 4rem;
+    overflow-y: auto;
+    width: 100%;
+}
+
+/* footer */
+footer {
+    padding: 3rem 0;
+    background-color: var(--footer-color);
+    text-align: center;
+    font-weight: 200;
+    color: var(--gray1-color);
+}
+
+footer h1 {
+    color: var(--white-color);
+}
+
+footer h1 span {
+    color: var(--green-color);
+}
+
+.footer_info {
+    margin: 1.5rem 0;
+}
+
+.footer_info span:nth-child(odd) {
+    color: var(--gray2-color);
+    margin-right: 0.5rem;
+}
+
+.footer_info span:nth-child(2) {
+    margin-right: 2rem;
+}
+
+.copyright {
+    font-size: 0.9rem;
+}
+
+/* Section */
+.section {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+/* intro */
+#intro {
+    background: url('images/home_background.png') center/cover no-repeat;
+    height: 1016px;
+}
+
+#intro strong {
+    font-weight: 500;
+}
+
+#intro p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--white-color);
+    padding: 440px 0;
+}
+
+#intro p span {
+    font-weight: 600;
+    color: var(--green-color);
+}
+
+/* about me */
+#about {
+    background-color: var(--black-color);
+}
+
+/* work */
+#works {
+    background-color: #2ED3B4;
+}
+
+/* footer */
+#contact {
+    background-color: var(--orange-color);
+}
