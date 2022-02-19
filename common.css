@@ -117,6 +117,10 @@ html, body {
     display: flex;
 }
 
+.navbar_menu .active {
+    color: var(--green-color);
+}
+
 .navbar_menu_item {
     margin-left: var(--basic-margin);
     color: var(--white-color);
@@ -124,7 +128,7 @@ html, body {
 
 /* 컨텐츠 묶기 */
 main {
-    padding-top: 4rem;
+    padding-top: 62px;
     overflow-y: auto;
     width: 100%;
 }
@@ -205,4 +209,39 @@ footer h1 span {
 /* footer */
 #contact {
     background-color: var(--orange-color);
+}
+
+/* ARK header*/
+.header {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    border-bottom: 1px solid #292A2D;
+}
+
+.header a {
+    color: var(--gray2-color);
+}
+
+.header a.active {
+    color: var(--white-color);
+    font-weight: 500;
+    border-bottom: 2px solid var(--white-color);
+    padding: 0 0 8px 0;
+    position: relative;
+}
+
+.header a.active::before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    position: absolute;
+    top: -4px;
+    right: 0;
+}
+
+.header_item {
+    margin-right: 1.5rem;
 }
