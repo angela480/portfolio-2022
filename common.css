@@ -62,7 +62,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #333c51;
+    background-color: #1F2021;
     border-radius: 20px;
 }
 
@@ -278,4 +278,10 @@ div.smartDL_main_first {
 div.smartDL_main_second {
     background: url('images/SmartDL_2.png') center/cover no-repeat;
     height: 8888px;
+}
+
+/* 하이케어 */
+div.hycare_main_first {
+    background: url('images/Hycare_1.png') center/cover no-repeat;
+    height: 1751px;
 }
