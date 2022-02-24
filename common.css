@@ -271,11 +271,11 @@ div.ark_main_second {
 
 /* 도어락 */
 div.smartDL_main_first {
-    background: url('images/smartDL_1.png') center/cover no-repeat;
+    background: url('images/SmartDL_1.png') center/cover no-repeat;
     height: 3593px;
 }
 
 div.smartDL_main_second {
-    background: url('images/smartDL_2.png') center/cover no-repeat;
+    background: url('images/SmartDL_2.png') center/cover no-repeat;
     height: 8888px;
 }
