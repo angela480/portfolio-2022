@@ -20,7 +20,7 @@
     --gray2-color: #A2A2A2;
     --gray3-color: #757575;
     --gray4-color: #505050;
-    --header-color: #292A2D;
+    --header-color: #1E1F21;
     --black-color: #18191A;
     --footer-color: #1F2021;
 
@@ -284,4 +284,43 @@ div.smartDL_main_second {
 div.hycare_main_first {
     background: url('images/Hycare_1.png') center/cover no-repeat;
     height: 1751px;
+}
+
+div.hycare_main_second {
+    background: url('images/Hycare_2.png') center/cover no-repeat;
+    height: 2131px;
+}
+
+div.hycare_main_third {
+    background: url('images/Hycare_3.png') center/cover no-repeat;
+    height: 3629px;
+}
+
+div.hycare_main_four {
+    background: url('images/Hycare_4.png') center/cover no-repeat;
+    height: 1071px;
+}
+
+div.hycare_main_five {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--header-color);
+    padding: 9rem 0;
+}
+
+div.hycare_main_five p {
+    color: var(--white-color);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+div.hycare_main_five video {
+    border: 20px solid var(--black-color);
+    border-radius: 20px;
+}
+
+div.hycare_main_six {
+    background: url('images/Hycare_5.png') center/cover no-repeat;
+    height: 4241px;
 }
