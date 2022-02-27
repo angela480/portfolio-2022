@@ -23,9 +23,9 @@
                 </div>
                 <div class="navbar_menu">
                     <!-- alt + shift 동시에 눌러서 마우스로 끌어당기면 동시에 작성 가능 -->
-                    <a href="#" onclick="location.href='04. about.html'" class="navbar_menu_item">ABOUT ME<span></span></a> 
+                    <a class="navbar_menu_item" data-link="#about">ABOUT ME<span></span></a> 
                     <a href="#" onclick="location.href='01. work_ark.html'" class="navbar_menu_item">WORKS<span></span></a>
-                    <a href="#" class="navbar_menu_item">CONTACT<span></span></a>
+                    <a class="navbar_menu_item" data-link="#contact">CONTACT<span></span></a>
                 </div>
             </nav>
             <main>
@@ -40,34 +40,43 @@
                 </section>
                 <!-- 작업물 -->
                 <section id="works" class="section">
-                    <p class="title">MY WORKS</p>
-                    <div class="work_content">
-                        <img src="images/work_1.png">
-                        <div class="work_info">
-                            <h4>nMES ARK</h4>
-                            <p>공장별 장비 에러 분석 / 대시보드 / 데이터 시각화</p>
-                            <a href="#" onclick="location.href='01. work_ark.html'">자세히 보기 ></a>
-                        </div>
+                    <p class="work_title">MY WORKS</p>
+                    <div class="work_categories">
+                        <button class="category_btn active" data-filter="*">All</button>
+                        <button class="category_btn" data-filter="web">WEB</button>
+                        <button class="category_btn" data-filter="mobile">MOBILE</button>
+                        <button class="category_btn" data-filter="project">PROJECT</button>
                     </div>
-                    <div class="work_content">
-                        <div class="work_info">
-                            <h4>Smart Doorlock</h4>
-                            <p>스마트 도어락 / 모바일 앱</p>
-                            <a href="#" onclick="location.href='03. work_smartDL.html'">자세히 보기 ></a>
-                        </div>
-                        <img src="images/work_2.png">
-                    </div>
-                    <div class="work_content">
-                        <img src="images/work_3.png">
-                        <div class="work_info">
-                            <h4>HYCARE</h4>
-                            <p>바디 컨디션 회복 토탈 솔루션 / 산학프로젝트 with 코웨이</p>
-                            <a href="#" onclick="location.href='04. work_hycare.html'" >자세히 보기 ></a>
-                        </div>
+                    <div class="work_project">
+                        <a href="#" onclick="location.href='01. work_ark.html'" class="project">
+                            <img class="project_img" src="images/work_1.png">
+                            <div class="project_description">
+                                <h4>nMES ARK</h4>
+                                <p>공장별 장비 에러 분석 / 대시보드</p>
+                                <span>자세히 보기 ></span>
+                            </div>
+                        </a>
+                        <a href="#" onclick="location.href='03. work_smartDL.html'" class="project">
+                            <img class="project_img" src="images/work_2.png">
+                            <div class="project_description">
+                                <h4>Smart Doorlock</h4>
+                                <p>스마트 도어락 / 모바일 앱</p>
+                                <span>자세히 보기 ></span>
+                            </div>
+                        </a>
+                        <a href="#" onclick="location.href='04. work_hycare.html'" class="project">
+                            <img class="project_img" src="images/work_3.png">
+                            <div class="project_description">
+                                <h4>HYCARE</h4>
+                                <p>바디 컨디션 회복 솔루션 / 산학프로젝트(코웨이)</p>
+                                <span>자세히 보기 ></span>
+                            </div>
+                        </a>
+                    
                     </div>
                 </section>
             </main>
-            <footer>
+            <footer id="contact">
                 <h1>Let<span>'</span>s Talk</h1>
                 <div class="footer_info">
                     <span>E-MAIL</span>

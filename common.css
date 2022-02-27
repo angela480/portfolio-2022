@@ -46,7 +46,7 @@
     --font-micro: 2;
 
     /* Animation */
-    --animation-duration: 300ms;
+    --animation-duration: 200ms;
 }
 
 /* 스크롤 색상 */
@@ -119,6 +119,7 @@ html, body {
 
 .navbar_menu a:hover {
     color: var(--green-color);
+    cursor: pointer;
 }
 
 .navbar_menu .active {
@@ -209,60 +210,86 @@ footer h1 span {
 /* work */
 #works {
     padding: 4rem 0 8rem 0;
+    width: 1200px;
 }
 
-#works p.title {
+.work_project {
+    display: flex;
+    justify-content: space-between;
+}
+
+p.work_title {
     color: var(--white-color);
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
-.work_content {
+.work_project img {
+    width: 378px;
+}
+
+.project {
+    position: relative;
+}
+
+.project_description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--black-color);
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+    opacity: 0 ;
+    transform: translateY(10px);
+    transition: all var(--animation-duration) ease-in;
 }
 
-.work_content img {
-    width: 786px;
+.project:hover .project_description {
+    opacity: 0.8;
+    transform: translateY(0px);
 }
 
-.work_content:nth-child(2n) img {
-    margin-right: 30px;
+.project_description h4 {
+    color:  var(--white-color);
 }
 
-.work_content:nth-child(odd) img {
-    margin-left: 30px;
+.project_description p {
+    color:  var(--gray1-color);
+    margin-bottom: 12px;
 }
 
-.work_content h4 {
-    color: var(--white-color);
-    font-size: 28px;
+.project_description span {
+    color:  var(--green-color);
+    font-weight: 600;
 }
 
-.work_info {
-    text-align: left;
+.work_categories {
+    margin-bottom: 40px;
 }
 
-.work_info p {
-    font-size: 1rem;
-    color: var(--gray2-color);
-    margin-bottom: 2rem;
+.work_categories button {
+    background: none;
+    border: none;
+    color: var(--gray3-color);
+    font-size: 18px;
+    padding: 3px 24px;
+    cursor: pointer;
+    border-radius: 20px;
 }
 
-.work_info a {
+.work_categories button.active {
     color: var(--green-color);
+    border: 1px solid var(--green-color);
+    border-radius: 20px;
 }
 
-.work_info a:hover {
-    text-decoration: underline;
-}
-
-/* footer */
-#contact {
-    background-color: var(--orange-color);
+.work_categories button:hover {
+    /* background-color: #2E433E; */
+    color: var(--white-color);
 }
 
 /* ARK header*/
