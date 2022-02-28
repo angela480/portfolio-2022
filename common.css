@@ -3,8 +3,8 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'pretendard';
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
@@ -210,6 +210,12 @@ footer h1 span {
 #about {
     background: url('images/about.png') center/cover no-repeat;
     height: 725px;
+}
+
+/* skill */
+#skill {
+    background: url('images/skill.png') center/cover no-repeat;
+    height: 630px;
 }
 
 /* work */
