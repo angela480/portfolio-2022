@@ -133,7 +133,7 @@ html, body {
 
 /* 컨텐츠 묶기 */
 main {
-    padding-top: 62px;
+    padding-top: 58px;
     overflow-y: auto;
     width: 100%;
 }
@@ -331,7 +331,7 @@ p.work_title {
 }
 
 section.main {
-    margin-top: 55px;
+    margin-top: 50px;
 }
 
 /* 아크 */
