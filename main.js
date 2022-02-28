@@ -18,4 +18,13 @@ const projectContainer = document.querySelector('.work_project');
 const projects =  document.querySelectorAll('.project');
 workBtnContainer.addEventListener('click', (e) => {
     const filter = e.target.dataset.filter;
-})
+
+    projects.forEach((project) => {
+        console.log(project.dataset.type);
+        if (filter === '*' || filter === project.dataset.type) {
+            project.classList.remove('invisible');
+        } else {
+            project.classList.add('invisible');
+        }
+    });
+});
