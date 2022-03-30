@@ -199,6 +199,7 @@ footer h1 span {
     font-weight: 300;
     color: var(--white-color);
     padding: 440px 0;
+    line-height: 1.4;
 }
 
 #intro p span {
