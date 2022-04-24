@@ -133,7 +133,7 @@ html, body {
 
 /* 컨텐츠 묶기 */
 main {
-    padding-top: 58px;
+    padding-top: 56px;
     overflow-y: auto;
     width: 100%;
 }
